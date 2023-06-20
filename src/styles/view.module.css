@@ -1,0 +1,13 @@
+.cardmain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 50px;
+  /* background-color: hsl(278, 100%, 84%); */
+}
+
+.cardmainwrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}

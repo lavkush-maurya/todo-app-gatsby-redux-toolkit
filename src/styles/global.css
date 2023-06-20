@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Montserrat";
+  /* color: white; */
+}
+html,
+body {
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  background: radial-gradient(
+    at top left,
+    #ff78c4 0%,
+    #ff78c4 /* #9bcdd2*/ 100%
+  );
+  background-repeat: no-repeat;
+}
+.mainLayout {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+::-webkit-scrollbar {
+  width: 1%;
+}
