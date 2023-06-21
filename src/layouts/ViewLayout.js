@@ -14,7 +14,7 @@ import { Link } from "gatsby";
 const View = () => {
   const data = useSelector((state) => state.todo.data);
   const dispatch = useDispatch();
-  console.log("data", data);
+  // console.log("data", data);
 
   useEffect(() => {
     async function fetchData() {
@@ -36,16 +36,14 @@ const View = () => {
             <Card
               sx={{ width: 345, height: 350 }}
               key={id}
-              style={{ backgroundColor: "hsl(278, 100%, 84%)" }}
+              id="card"
               className={styles.cardmain}
             >
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   {data[id].title}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {data[id].description}
-                </Typography>
+                <Typography variant="body2">{data[id].description}</Typography>
               </CardContent>
               <CardActions>
                 <Button

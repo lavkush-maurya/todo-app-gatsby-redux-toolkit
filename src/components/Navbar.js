@@ -21,9 +21,24 @@ export default function Navbar() {
         onChange={handleChange}
         style={{ backgroundColor: "transparent" }}
       >
-        <BottomNavigationAction icon="Home" component={Link} to="/" />
-        <BottomNavigationAction icon="Todo" component={Link} to="/todo" />
-        <BottomNavigationAction icon="View" component={Link} to="/view" />
+        <BottomNavigationAction
+          className="navv"
+          icon="Home"
+          component={Link}
+          to="/"
+        />
+        <BottomNavigationAction
+          className="navv"
+          icon="Todo"
+          component={Link}
+          to="/todo"
+        />
+        <BottomNavigationAction
+          className="navv"
+          icon="View"
+          component={Link}
+          to="/view"
+        />
       </BottomNavigation>
     </div>
   );

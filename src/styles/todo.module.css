@@ -12,17 +12,3 @@
   background: #f48353;
   box-shadow: 0 0 3px 3px rgba(232, 248, 232, 0.721);
 }
-.btnHome {
-  margin-top: 80px;
-  background: #ffbdf7;
-  padding: 10px 16px;
-  border-radius: 10px;
-  margin: 20px;
-  font-weight: 500;
-  transition: box-shadow 0.3s ease;
-}
-
-.btnHome:hover {
-  background: #e1aeff;
-  box-shadow: 0 0 3px 3px rgba(232, 248, 232, 0.721);
-}

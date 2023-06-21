@@ -75,7 +75,7 @@ const EditPage = () => {
   useEffect(() => {
     const url = new URLSearchParams(window.location.search);
     idRef.current = url.get("id");
-    console.log("data", idRef.current);
+    // console.log("data", idRef.current);
   }, []);
 
   useEffect(() => {

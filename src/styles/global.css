@@ -13,11 +13,7 @@ body {
   scroll-behavior: smooth;
 }
 body {
-  background: radial-gradient(
-    at top left,
-    #ff78c4 0%,
-    #ff78c4 /* #9bcdd2*/ 100%
-  );
+  background: radial-gradient(at top left, #ff74b9 0%, #55f38a 100%);
   background-repeat: no-repeat;
 }
 .mainLayout {
@@ -27,3 +23,68 @@ body {
 ::-webkit-scrollbar {
   width: 1%;
 }
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+footer p {
+  position: fixed;
+  bottom: 0;
+  color: #000000;
+  margin: 40px auto;
+}
+.black {
+  color: #000000;
+}
+
+.dark {
+  color: white;
+  background: radial-gradient(at top left, #009048 0%, #8b3261 60%);
+  background-repeat: no-repeat;
+}
+
+.dark .navv {
+  color: white;
+}
+#card {
+  background-color: hsl(278, 100%, 84%);
+}
+.dark #card {
+  background-color: #1c5104;
+  color: white;
+}
+/* -----home button----- */
+
+.btnHome {
+  margin-top: 80px;
+  background: #ffbdf7;
+  padding: 10px 16px;
+  border-radius: 10px;
+  margin: 20px;
+  font-weight: 500;
+  transition: box-shadow 0.3s ease;
+}
+
+.btnHome:hover {
+  background: #e1aeff;
+  box-shadow: 0 0 3px 3px rgba(232, 248, 232, 0.721);
+}
+.dark .btnHome {
+  margin-top: 80px;
+  color: #aadf78;
+  background: #00430b;
+  padding: 10px 16px;
+  border-radius: 10px;
+  margin: 20px;
+  font-weight: 500;
+  transition: box-shadow 0.3s ease;
+}
+
+.dark .btnHome:hover {
+  background: #1c5004;
+  box-shadow: 0 0 3px 3px rgba(232, 248, 232, 0.721);
+}
+
+/* -----home button----- */
