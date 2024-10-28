@@ -3,7 +3,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 export const insertapi = createAsyncThunk("insertapi", async (data) => {
   try {
     const response = await fetch(
-      "https://todoapp-gatsby-default-rtdb.asia-southeast1.firebasedatabase.app/tododata.json",
+      "https://gatsby-todo-8f674-default-rtdb.firebaseio.com/tododata.json",
       {
         method: "POST",
         body: JSON.stringify(data),
@@ -23,7 +23,7 @@ export const insertapi = createAsyncThunk("insertapi", async (data) => {
 });
 export const fetchdata = createAsyncThunk("fetchdata", async () => {
   const response = await fetch(
-    "https://todoapp-gatsby-default-rtdb.asia-southeast1.firebasedatabase.app/tododata.json"
+    "https://gatsby-todo-8f674-default-rtdb.firebaseio.com/tododata.json"
   );
   const result = response.json();
   console.log("result==>", result);
@@ -32,7 +32,7 @@ export const fetchdata = createAsyncThunk("fetchdata", async () => {
 export const deleteData = createAsyncThunk("deleteData", async (id) => {
   try {
     const response = await fetch(
-      `https://todoapp-gatsby-default-rtdb.asia-southeast1.firebasedatabase.app/tododata/${id}.json`,
+      `https://gatsby-todo-8f674-default-rtdb.firebaseio.com/tododata/${id}.json`,
       {
         method: "DELETE",
       }
@@ -48,7 +48,7 @@ export const deleteData = createAsyncThunk("deleteData", async (id) => {
 export const editData = createAsyncThunk("editData", async ({ id, data }) => {
   try {
     const response = await fetch(
-      `https://todoapp-gatsby-default-rtdb.asia-southeast1.firebasedatabase.app/tododata/${id}.json`,
+      `https://gatsby-todo-8f674-default-rtdb.firebaseio.com/tododata/${id}.json`,
       {
         method: "PUT",
         body: JSON.stringify(data),

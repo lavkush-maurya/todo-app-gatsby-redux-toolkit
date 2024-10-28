@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `TodoApp Gatsby`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://www.lavkushmaurya.me`,
   },
   plugins: [`gatsby-plugin-netlify`],
 };
